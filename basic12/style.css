@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    border: 2px solid #684591;
+    background-color: rgb(204, 145, 206);
+    padding: 10px;
+}
+.item {
+    border: 2px solid #684591;
+    background-color: rgb(255, 250, 184);
+    padding: 10px;
+}
+
+/* place-items - (align-items) + (justify-items) 가 붙으면 단축한다 */
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    height: 100vh;
+    place-items: center start;
+    /* place-items: align-items justify-items */
+
+}
+.item {}
