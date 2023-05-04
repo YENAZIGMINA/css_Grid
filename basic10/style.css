@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.container {
+    border: 2px solid #684591;
+    background-color: rgb(204, 145, 206);
+    padding: 10px;
+}
+.item {
+    border: 2px solid #684591;
+    background-color: rgb(255, 250, 184);
+    padding: 10px;
+}
+
+/* align-items 각 셀 안에서의 움직임 */
+.container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+    height: 120vh;
+    align-items: end;
+    /* align-items: stretch; -> 가득 채우겠다 (기본값) 
+      start -> 내 공간은 그대로 유지하는데, 컨텐츠를 시작(위)에 위치하겠다
+      center -> 내 공간은 그대로 유지하는데, 컨텐츠를 중간에 위치하겠다
+      end -> 내 공간은 그대로 유지하는데, 컨텐츠를 끝에 위치하겠다
+      */
+}
+.item {}
